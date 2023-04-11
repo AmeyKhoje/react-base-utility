@@ -1,6 +1,6 @@
 {
   "name": "react-base-utility",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Utilities for building react applications more faster",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
