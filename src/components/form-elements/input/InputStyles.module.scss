@@ -1,0 +1,17 @@
+.input-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 0;
+  background-color: #e5e5e5;
+  padding: 1rem 1.5rem;
+  box-shadow: none;
+
+  &:is(:focus, :active) {
+    box-shadow: none;
+    outline: none;
+  }
+}

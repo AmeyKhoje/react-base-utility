@@ -1,0 +1,25 @@
+@import 'src/assets/scss/global.scss';
+
+.button {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  &-title {
+    p {
+      font-size: 2rem;
+    }
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-left {
+      margin-right: 0.8rem;
+    }
+    &-right {
+      margin-left: 0.8rem;
+    }
+  }
+}
