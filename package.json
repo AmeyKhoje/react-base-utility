@@ -5,7 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "type": "module",
-  "homepage": "https://github.com/AmeyKhoje/react-base-utility",
+  "homepage": "https://github.com/AmeyKhoje/react-base-utility#readme",
   "scripts": {
     "start": "webpack serve -- --env mode=development",
     "build": "webpack -- --env mode=production",
