@@ -32,4 +32,4 @@ const useTranslatedStyles = (stylesCreator: any, props = {}) => {
   }, [styles, styleRules]);
 };
 
-export default useInsertionEffect;
+export default useTranslatedStyles;

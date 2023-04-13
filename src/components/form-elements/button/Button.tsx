@@ -3,7 +3,7 @@ import ButtonInterface from './Button.interface';
 import styles from './ButtonStyles.module.scss';
 import Flex from 'src/components/bare/flex/Flex';
 
-const Button = memo(({ title, extras, icon }: ButtonInterface) => {
+const Button = memo(({ title, extras, icon, className }: ButtonInterface) => {
   const [iconColor, setIconColor] = useState<string>('');
   const iconContainerRef = useRef<HTMLDivElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
@@ -64,7 +64,7 @@ const Button = memo(({ title, extras, icon }: ButtonInterface) => {
 
   return (
     <button
-      className={`${styles['button']}`}
+      className={`${styles['button']} ${className}`}
       ref={(ref) => (buttonRef.current = ref)}
     >
       <Flex
