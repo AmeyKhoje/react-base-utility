@@ -51,12 +51,14 @@ export default [
         verbose: false,
         flatten: true,
       }),
-      scss({ fileName: 'bundle.css', sourceMap: true }),
+      // scss({ fileName: 'bundle.css', sourceMap: true }),
       external(),
       resolve(),
       commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
+        declarationDir: 'types/',
+        declaration: true,
       }),
       postcss({
         modules: true,
@@ -80,11 +82,5 @@ export default [
       cleanupPlugin(),
     ],
     external: ['react', 'react-dom'],
-  },
-  {
-    input: 'dist/esm/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    external: [/\.s[ac]ss?$/i],
-    plugins: [dts()],
   },
 ];

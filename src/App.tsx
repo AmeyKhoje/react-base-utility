@@ -6,6 +6,7 @@ import Container from './components/bare/container/Container';
 import './indexs.scss';
 import useWindowResize from './hooks/useWindowResize';
 import { WindowSizeInterface } from './hooks/Hooks.interface';
+import { Button as NewButton } from '../dist';
 // import { getTodaysDate } from 'web-utility-helpers/';
 
 const App = () => {
@@ -29,16 +30,9 @@ const App = () => {
             },
           }}
         >
+          <NewButton title="test" />
           <Button
             title="Button Here"
-            icon={{
-              svg: FiActivity,
-              side: 'right',
-              style: {
-                width: '2rem',
-                height: '2rem',
-              },
-            }}
             extras={{
               bg: 'red',
               textColor: 'white',

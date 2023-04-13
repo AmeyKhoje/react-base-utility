@@ -18,7 +18,7 @@ module.exports = ({ mode } = { mode: 'production' }) => {
       static: {
         directory: path.resolve(__dirname, './public'),
       },
-      port: 3000,
+      port: 3001,
       hot: true,
       open: true,
       compress: true,
