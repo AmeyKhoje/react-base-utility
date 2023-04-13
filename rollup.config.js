@@ -68,6 +68,7 @@ export default [
             },
           ],
         ],
+        extract: false,
       }),
       babel({
         exclude: 'node_modules/**',
@@ -83,7 +84,7 @@ export default [
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    external: [/\.css$/],
+    external: [/\.s[ac]ss?$/i],
     plugins: [dts()],
   },
 ];
