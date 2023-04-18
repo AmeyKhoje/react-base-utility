@@ -6,7 +6,7 @@ import Container from './components/bare/container/Container';
 import './indexs.scss';
 import useWindowResize from './hooks/useWindowResize';
 import { WindowSizeInterface } from './hooks/Hooks.interface';
-import { Button as NewButton } from '../dist';
+// import StyledDiv from './components/bare/styled-div/StyledDiv';
 // import { getTodaysDate } from 'web-utility-helpers/';
 
 const App = () => {
@@ -30,7 +30,6 @@ const App = () => {
             },
           }}
         >
-          <NewButton title="test" />
           <Button
             title="Button Here"
             extras={{
